@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.teachtrack.AddSubject">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/linear_layout_bg"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        app:srcCompat="@drawable/arrow"
+                        android:id="@+id/imageViewArrow"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:tint="@color/green"
+                        android:layout_marginTop="3dp"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textStyle="bold"
+
+                        android:id="@+id/textViewSubjectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Course Details"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_subject_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/black"
+                    android:layout_marginHorizontal="20dp">
+
+                    <EditText
+                        android:id="@+id/editTextSubjectName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Course Name"
+                        android:singleLine="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_subject_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/black"
+                    android:layout_marginHorizontal="20dp">
+
+                    <EditText
+                        android:id="@+id/editTextSubjectId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Course ID"
+                        android:singleLine="false"
+                        android:textColor="@color/black" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_dept_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/black">
+
+                        <EditText
+                            android:id="@+id/editTextDeptName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Department Name"
+                            android:textColor="@color/black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black"
+                    android:layout_marginHorizontal="20dp">
+
+                    <EditText
+                        android:id="@+id/editTextSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Section"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/linear_layout_bg"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        app:tint="@color/green"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/list"
+                        android:id="@+id/imageViewType1"
+                        android:layout_marginTop="1dp"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textStyle="bold"
+                        android:text="Select Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/select_type1"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <Spinner
+
+                    android:id="@+id/spinnerType"
+                    android:layout_marginHorizontal="20dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:popupBackground="@color/linear_bg"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/linear_layout_bg"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        app:tint="@color/green"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/semester"
+                        android:layout_marginTop="1dp"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textStyle="bold"
+                        android:text="Semester"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/semester"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinnerSemester"
+                    android:layout_marginHorizontal="20dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:popupBackground="@color/linear_bg"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/linear_layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        app:tint="@color/green"
+                        android:id="@+id/imageViewSemester"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="1dp"
+                        app:srcCompat="@drawable/semester"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Credit"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinnerCredit"
+                    android:layout_marginHorizontal="20dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:popupBackground="@color/linear_bg"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/linear_layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        app:tint="@color/green"
+                        android:id="@+id/imageViewType"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="1dp"
+                        app:srcCompat="@drawable/list"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textStyle="bold"
+                        android:id="@+id/select_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Add Student"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginHorizontal="20dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/textViewSelectedCSV"
+android:layout_marginBottom="12dp"
+                    android:text="  No File Selected"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonSelectCSV"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/linear_layout_bg"
+                    android:backgroundTint="#1BF814"
+                    android:onClick="startFileChooser"
+                    android:layout_marginBottom="60dp"
+                    android:text="Select a .csv file" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.teachtrack.EditSubject">
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/linear_layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        app:srcCompat="@drawable/arrow"
+                        app:tint="@color/green"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/textViewSubjectNameE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Course Details"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_subject_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+                        android:id="@+id/editTextSubjectNameE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Course Name"
+                        android:singleLine="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_subject_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/black"
+                    android:layout_marginHorizontal="20dp">
+
+                    <EditText
+                        android:id="@+id/editTextSubjectIdE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Course ID"
+                        android:singleLine="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_dept_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+                        android:id="@+id/editTextDeptNameE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Department Name"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="20dp"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+                        android:id="@+id/editTextSectionE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Section"
+                        android:singleLine="false"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/linear_layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageViewType"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/list"
+                        app:tint="@color/green"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/select_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Select Type"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinnerTypeE"
+                    android:layout_marginHorizontal="20dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:popupBackground="@color/linear_bg"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/linear_layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewSemester"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/semester"
+                        app:tint="@color/green"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/semester"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Semester"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/spinnerSemesterE"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="@color/linear_bg"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/linear_layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewSemester1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/semester"
+                        app:tint="@color/green"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Credit"
+
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/spinnerCreditE"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="@color/linear_bg"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

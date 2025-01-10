@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.teachtrack.AddStudent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/TextDark"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            app:popupTheme="@style/ToolbarTheme"
+            app:navigationIcon="?android:attr/homeAsUpIndicator"
+            app:navigationIconTint="@color/black"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_add_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        app:backgroundTint="@color/green"
+        android:layout_marginBottom="240dp"
+        app:srcCompat="@drawable/save" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    app:theme="@style/AppTheme.NoActionBar"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="TeachTrack"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/bobatap_logo"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/bobatap_logo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/icont"
+        app:tint="@color/black"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintVertical_bias="0.4"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"/>
+    <ProgressBar
+android:layout_marginHorizontal="100dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pb"
+        android:scaleY="3.5"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bobatap_logo"
+        app:layout_constraintVertical_bias="0.7"/>
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="69%"
+        android:layout_marginBottom="150dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bobatap_logo"
+        app:layout_constraintVertical_bias="0.7"/>
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="217dp"
+        android:layout_height="30dp"
+        android:fontFamily="monospace"
+        android:text="from"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/lightgray"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bobatap_logo"
+        app:layout_constraintVertical_bias="0.7"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/ritmos"
+        android:layout_width="217dp"
+        android:layout_height="30dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="RITMOS"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from"
+        app:layout_constraintVertical_bias="0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

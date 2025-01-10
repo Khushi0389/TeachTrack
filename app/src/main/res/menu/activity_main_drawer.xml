@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/backup"
+            android:icon="@drawable/backup"
+            android:title="Backup Database" />
+        <item
+            android:id="@+id/restore"
+            android:icon="@drawable/restore"
+            android:title="Restore Database" />
+        <item
+            android:id="@+id/csv"
+            android:icon="@drawable/folder"
+            android:title="Exported CSV"/>
+        <item
+            android:id="@+id/pdf"
+            android:icon="@drawable/pdfr"
+            android:title="Convert to PDF"/>
+        <item
+            android:id="@+id/action_refresh"
+            android:icon="@drawable/ic_refresh"
+            android:title="Refresh"
+            app:showAsAction="ifRoom" />
+    </group>
+
+    <item android:title="more"
+        android:id="@+id/more">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/about_us"
+                android:title="About us" />
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/question"
+                android:title="Help"/>
+        </menu>
+    </item>
+
+</menu>

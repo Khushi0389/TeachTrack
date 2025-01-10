@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Help Page"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/TextDark"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Introduction to the App"
+            android:textSize="18sp"
+            android:textColor="@color/TextDark"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextDark"
+            android:text="The purpose of our app is to provide teachers with a comprehensive tool for managing attendance and internal marks efficiently. With our app, teachers can easily track attendance for courses, organize course details, add students in bulk or manually, manage class test and exam marks, and handle lab/sessional marks. By integrating features for backup and restore, our app ensures secure data storage and easy recovery. Additionally, it saves data in PDF and CSV formats, facilitating convenient record-keeping and analysis."
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/TextDark"
+            android:layout_height="wrap_content"
+            android:text="2. Navigation Guide"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Our app features a user-friendly interface designed to streamline the process of managing attendance and internal marks for teachers. Upon opening the app, users are greeted with a clean and intuitive layout, allowing easy access to all key functionalities. The main sections of the app include: \n\n1. Dashboard: Provides an overview of courses and important notifications.\n2. Attendance Management: Allows teachers to mark attendance manually or through automated methods. Users can view and export attendance records here. \n3. Course Management: Enables organization of courses with relevant details such as course name, ID, department name, and section. \n4. Student Management: Facilitates adding students in bulk or manually to courses. \n5. Marks Management: Includes features for recording and managing class test marks, final exam marks, lab/sessional marks, and other assessments. \n 6.Backup and Restore: For secure backup and restoration of data, the backup is done within the sdcard.\n\n Users can easily navigate between these sections using the navigation drawer or tabs provided at the bottom of the screen, ensuring a seamless experience while managing attendance and internal marks."
+            android:textColor="@color/TextDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Data Storage Location"
+            android:textSize="18sp"
+            android:textColor="@color/TextDark"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextDark"
+            android:text="Your data is stored in the following location on your device: /sdcard/TeachTrack/ . You can access this location using a file manager app on your device. It's where your attendance records, marks, and other relevant data are saved. Feel free to back up this data for safekeeping or share it with others as needed."
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextDark"
+            android:text="4. Note: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please ensure that the student ID is unique and not already assigned to another student. Adding a student with an ID that falls between existing IDs may lead to inaccurate records. It's important to maintain the integrity of student IDs for accurate attendance and marks management."
+            android:textColor="@color/TextDark"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/TextDark"
+            android:layout_height="wrap_content"
+            android:text="5. Contact Information"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextDark"
+            android:text="If you have any questions, suggestions, or need assistance, you can contact us at:"
+            android:layout_marginBottom="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00EAFF"
+            android:text="Email: teachtrack@gmail.com"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextDark"
+            android:text="THANK YOU !"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextDark"
+            android:text="THANK YOU !"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

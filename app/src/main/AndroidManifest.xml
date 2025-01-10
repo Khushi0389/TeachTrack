@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.teachtrack">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icont"
+        android:label="TeachTrack"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.teachtrack.help"
+            android:exported="false"
+            android:label="@string/title_activity_help"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.teachtrack.MainActivity"
+            android:exported="true"
+            android:label="TeachTrack"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyCLeVOd14LtRtpvQ0neWU5gYWrzQqENaqA" />
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+        </activity>
+        <activity
+            android:name="com.example.teachtrack.AttendanceActivity"
+            android:label="Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teachtrack.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.teachtrack.AddSubject"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Add Subject"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.teachtrack.AboutUsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="About Us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teachtrack.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.teachtrack.EditSubject"
+            android:label="Edit Subject"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.example.teachtrack.ShowRecord"
+            android:label="@string/title_activity_show_record"
+            android:parentActivityName="com.example.teachtrack.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teachtrack.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.teachtrack.StudentActivity"
+            android:label="Student Info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teachtrack.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.teachtrack.AddStudent"
+            android:label="Add Student"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.teachtrack.EditStudent"
+            android:label="Edit Student Info"
+            android:parentActivityName="com.example.teachtrack.StudentActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teachtrack.StudentActivity" />
+        </activity>
+        <activity
+            android:name="com.example.teachtrack.EditStudentLab"
+            android:label="@string/title_activity_edit_student_lab"
+            android:parentActivityName="com.example.teachtrack.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teachtrack.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.teachtrack.SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="TeachTrack"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.teachtrack.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

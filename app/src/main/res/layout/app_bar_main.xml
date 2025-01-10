@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.teachtrack.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            app:popupTheme="@style/AppTheme"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linearlayout"
+            android:weightSum="100">
+            <TextView
+                android:id="@+id/bobas"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="30dp"
+
+android:gravity="start|top"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="TeachTrack"
+                android:textColor="@color/TextDark"
+                android:textSize="22sp"
+                android:textStyle="bold"
+               />
+
+        </RelativeLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="50dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:backgroundTint="@color/green"
+        app:srcCompat="@drawable/fab_icon"
+       />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginHorizontal="7dp"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        app:backgroundTint="#000B0B0B"
+        app:srcCompat="@drawable/ic_refresh"
+        android:tint="@color/black"
+        app:elevation="4dp"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

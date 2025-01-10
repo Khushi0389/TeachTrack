@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "20537155936",
+    "firebase_url": "https://teachtrack-f376c-default-rtdb.firebaseio.com",
+    "project_id": "teachtrack-f376c",
+    "storage_bucket": "teachtrack-f376c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20537155936:android:2942d458cec8b62de07e05",
+        "android_client_info": {
+          "package_name": "com.example.teachtrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20537155936-7gfa2ffre2ns7k39n5jj73cdouu57dvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.teachtrack",
+            "certificate_hash": "9463a2b0f04236c76f9cf344721e63b3187e8590"
+          }
+        },
+        {
+          "client_id": "20537155936-gv7btdktc4tr7ge8ig8m6jjceootbp2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5w_WFgD8NqRr0kIueBjk_bjD6adX1v0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20537155936-gv7btdktc4tr7ge8ig8m6jjceootbp2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        android:fitsSystemWindows="true"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarAddSubject"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            app:titleTextColor="@color/TextDark"
+            app:navigationIcon="?android:attr/homeAsUpIndicator"
+            app:navigationIconTint="@color/black"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_add_subject"
+        android:layout_marginHorizontal="25dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="35dp"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        app:backgroundTint="@color/green"
+        app:srcCompat="@drawable/save" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

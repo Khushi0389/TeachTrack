@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background"
+    tools:context=".ShowRecord">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/ToolbarTheme">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/TextDark"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorToolbar"
+            app:popupTheme="@style/ToolbarTheme" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_show_record" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="32dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:srcCompat="@drawable/baseline_file_download_24"
+        app:backgroundTint="@color/green"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

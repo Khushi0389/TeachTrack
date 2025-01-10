@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/aboutapp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar"
+        app:popupTheme="@style/AppTheme.NoActionBar"
+        app:navigationIcon="?android:attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/black"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:fontFamily="sans-serif-medium"
+
+                android:layout_weight="1"
+                android:text="About The App"
+                android:textColor="@color/TextDark"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/india"
+        android:background="@drawable/background"
+        android:layout_below="@id/aboutapp"> <!-- Set layout_above to position below the view with ID "india" -->
+
+
+
+        <ImageView
+            android:id="@+id/bobaicons"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/bobaa"
+            android:src="@drawable/icont"
+            app:tint="@color/TextDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp" />
+        <TextView
+            android:id="@+id/bobaa"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="TeachTrack"
+            android:textColor="@color/TextDark"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="30dp" />
+
+        <TextView
+            android:layout_below="@id/bobaicons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:id="@+id/aboutthe"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Next Generation Of All Social Media Apps" />
+        <TextView
+            android:layout_below="@id/aboutthe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:id="@+id/version"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center"
+            android:textColor="@color/TextDark"
+            android:textStyle="bold"
+            android:text="Version 1.0" />
+
+
+
+    <LinearLayout
+        android:id="@+id/teamSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/india"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+
+        >
+
+        <!-- Team Member 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/rhythm"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/TextDark"
+                android:contentDescription="Rhythm Debnath" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rhythm Debnath"
+                android:textColor="@color/TextDark"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Front End"
+android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/rhythmemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/emailpic"
+                android:backgroundTint="@color/TextDark"
+                android:onClick="sendEmail" />
+
+
+        </LinearLayout>
+
+        <!-- Team Member 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/khushi"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/TextDark"
+                android:contentDescription="Team Member 2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khushi Gupta"
+                android:textColor="@color/TextDark"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back End"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/khushiemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/emailpic"
+                android:backgroundTint="@color/TextDark"
+                android:onClick="sendEmail2" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/team"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Creators"
+        android:textColor="@color/TextDark"
+        android:textSize="28dp"
+        android:background="@color/colorToolbar"
+        android:textStyle="bold"
+        android:layout_above="@id/teamSection"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp" />
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/india"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Made in India"
+        android:layout_marginHorizontal="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/TextDark"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+    </RelativeLayout>
+</RelativeLayout>

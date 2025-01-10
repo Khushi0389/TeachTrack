@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFab">#2a2a2a</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="linear_bg">#424242</color>
+    <color name="matColor1">#e53935</color>
+    <color name="matColor3">#d81b60</color>
+    <color name="matColor2">#505050</color>
+    <color name="matColor4">#1e88e5</color>
+    <color name="matColor5">#00897b</color>
+    <color name="matColor6">#00c853</color>
+    <color name="matColor7">#F8F700FF</color>
+    <color name="matColor10">#F9009E</color>
+    <color name="matColor9">#26c6da</color>
+    <color name="matColor8">#B00020</color>
+
+    <color name="black">#FFFFFF</color>
+    <color name="white">#000000</color>
+    <color name="colorPrimary">#0B0A0A</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorToolbar">#9E414040</color>
+    <color name="colorButton">#AA00FF</color>
+    <color name="TextDark">#D0D0D1</color>
+    <color name="Rwhite">#FFFFFF</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lightgray">#E6D6D1D1</color>
+    <color name="textcolor">#464646</color>
+    <color name="icontint">#00363636</color>
+    <color name="yourSelectedColor">#FF0101</color>
+    <color name="darkgray">#AE000000</color>
+    <color name="blue_link">#246fd7</color>
+    <color name="sky_blue">#007cf7</color>
+    <color name="dark_purple">#23002b</color>
+    <color name="red">#FA2516</color>
+    <color name="colorButton2">#FF6D00</color>
+    <color name="green"> #64DD17</color>
+
+    <color name="FragmentBackground">#000000</color>
+    <color name="cantBunk">#640000</color>
+    <color name="canBunk">#006400</color>
+    </resources>
+
