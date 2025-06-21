@@ -26,6 +26,13 @@ TeachTrack is a comprehensive **student management application** designed for ed
    - Contact support via predefined email templates.
 7. **User-Friendly Interface**
    - Clean and simple design for seamless navigation.
+
+## 🖼️ Screenshots
+
+| Home | Student List | Attendance |
+|------|--------------|------------|
+| ![Home Screen](screenshots/home.png) | ![Student List](screenshots/student_list.png) | ![Attendance](screenshots/attendance.png) |
+
  
 
  ## Installation guide
