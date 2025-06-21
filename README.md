@@ -31,7 +31,7 @@ TeachTrack is a comprehensive **student management application** designed for ed
 
 | Home | Student List | Attendance |
 |------|--------------|------------|
-| ![Home Screen](screenshots/home.png) | ![Student List](screenshots/student_list.png) | ![Attendance](screenshots/attendance.png) |
+| ![Home Screen](home.png) | ![Student List](student_list.png) | ![Attendance](attendance.png) | ![Records](records.png) |
 
  
 
