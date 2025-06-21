@@ -1,31 +1,34 @@
-# TeachTrack - Student Management App
+# TeachTrack – Student Management App 📚📱
 
 ## About TeachTrack
-TeachTrack is a comprehensive **student management application** designed for educators to efficiently handle administrative tasks. Built using **Java** in the **Android Studio** environment, it simplifies the management of attendance, academic records, and course details with a user-friendly interface.
+TeachTrack is a comprehensive **student management application** designed for educators to efficiently handle administrative tasks.  
+Built using **Java** in the **Android Studio** environment, it simplifies attendance tracking, academic records, and course management — all in a clean, intuitive interface.
 
 ---
 
-## Features
-```markdown
+## ✨ Features
+
 1. **Student Management**
    - Add, edit, and delete student records.
    - Bulk addition via **CSV files**.
 2. **Attendance Tracking**
-   - Mark attendance (present/absent/late).
-   - View attendance statistics and detailed records.
+   - Mark attendance (Present/Absent/Late).
+   - View attendance statistics and detailed reports.
 3. **Academic Record Management**
-   - Update and manage class test, lab, and sessional marks.
-   - View theory and lab performance reports.
+   - Manage class test, lab, and sessional marks.
+   - View individual student performance in theory and lab.
 4. **Course Management**
    - Create, edit, and organize courses by department, section, and semester.
 5. **Backup and Restore**
-   - Secure backups of all student/course data.
-   - Export data to **CSV** or **PDF** formats.
+   - Export/import student and course data.
+   - Support for **CSV** and **PDF** formats.
 6. **Help and Support**
-   - Access a built-in user guide.
-   - Contact support via predefined email templates.
+   - Built-in user guide for first-time users.
+   - Email templates for contacting support.
 7. **User-Friendly Interface**
-   - Clean and simple design for seamless navigation.
+   - Simple, modern, and mobile-optimized UI.
+
+---
 
 ## 🖼️ Screenshots
 
@@ -33,31 +36,39 @@ TeachTrack is a comprehensive **student management application** designed for ed
 |------|--------------|------------|---------|
 | ![Home](home.png) | ![Student List](student_list.png) | ![Attendance](attendance.png) | ![Records](records.png) |
 
-
- ## Installation guide
- 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Khushi0389/TeachTrack
-
-
 ---
 
-## Technologies Used
-```markdown
-- **IDE:** Android Studio  
-- **Programming Language:** Java  
-- **Database:** SQLite  
+## ⚙️ Installation Guide
 
-## How to contribute?
-
-1. **Fork** the repository.  
-2. Create a **feature branch**:
+1. Clone the repository:
    ```bash
-   git checkout -b feature-name
-3. Commit your changes:
-   bash
-  git commit -m "Add feature description"
-4. Push to your branch:
-   bash
-   git push origin feature-name
+   git clone https://github.com/Khushi0389/TeachTrack
+Open the project in Android Studio.
 
+Build the project and run it on an emulator or physical device.
+
+🧰 Technologies Used
+IDE: Android Studio
+
+Programming Language: Java
+
+Database: SQLite
+
+🤝 How to Contribute
+Fork the repository.
+Create a feature branch:
+git checkout -b feature-name
+
+Commit your changes:
+git commit -m "Add feature description"
+
+Push to your branch:
+git push origin feature-name
+Open a Pull Request and describe your changes.
+
+📄 License
+MIT License. Feel free to use and modify with proper attribution.
+
+🙋‍♀️ Maintainer
+Khushi Gupta
+https://github.com/Khushi0389
