@@ -56,6 +56,7 @@ Database: SQLite
 
 🤝 How to Contribute
 Fork the repository.
+
 Create a feature branch:
 git checkout -b feature-name
 
@@ -64,6 +65,7 @@ git commit -m "Add feature description"
 
 Push to your branch:
 git push origin feature-name
+
 Open a Pull Request and describe your changes.
 
 📄 License
