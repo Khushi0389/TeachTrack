@@ -42,7 +42,7 @@ Built using **Java** in the **Android Studio** environment, it simplifies attend
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Khushi0389/TeachTrack
+   git clone https://github.com/Khushi0389/TeachTrack.git
 Open the project in Android Studio.
 
 Build the project and run it on an emulator or physical device.
